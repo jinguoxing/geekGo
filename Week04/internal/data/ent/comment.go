@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"entgo.io/ent/dialect/sql"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent/article"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent/comment"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
 )
 
 // Comment is the model entity for the Comment schema.

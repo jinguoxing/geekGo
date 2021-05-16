@@ -67,7 +67,7 @@ func main(){
 
 	g.Go(func() error{
 
-		quit := make(chan os.Signal,1)
+		quit := make(chan os.Signal,0)
 		signal.Notify(quit,syscall.SIGTERM,syscall.SIGQUIT,syscall.SIGINT)
 
 		select {

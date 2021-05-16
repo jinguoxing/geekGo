@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/go-kratos/kratos/examples/blog/api/blog/v1"
-	"github.com/go-kratos/kratos/examples/blog/internal/conf"
+	"github.com/jinguoxing/geekGo/Week04/api/blog/v1"
+	"github.com/jinguoxing/geekGo/Week04/internal/conf"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"
 	"github.com/go-kratos/kratos/v2/config/file"

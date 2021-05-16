@@ -5,14 +5,13 @@
 package main
 
 import (
-	"github.com/go-kratos/kratos/examples/blog/internal/biz"
-	"github.com/go-kratos/kratos/examples/blog/internal/conf"
-	"github.com/go-kratos/kratos/examples/blog/internal/data"
-	"github.com/go-kratos/kratos/examples/blog/internal/server"
-	"github.com/go-kratos/kratos/examples/blog/internal/service"
-	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/google/wire"
+	"github.com/jinguoxing/geekGo/Week04/internal/biz"
+	"github.com/jinguoxing/geekGo/Week04/internal/conf"
+	"github.com/jinguoxing/geekGo/Week04/internal/data"
+	"github.com/jinguoxing/geekGo/Week04/internal/server"
+	"github.com/jinguoxing/geekGo/Week04/internal/service"
 	"go.opentelemetry.io/otel/trace"
 )
 

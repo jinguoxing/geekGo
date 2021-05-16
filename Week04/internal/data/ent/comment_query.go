@@ -11,9 +11,9 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent/article"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent/comment"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent/predicate"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/predicate"
 )
 
 // CommentQuery is the builder for querying Comment entities.

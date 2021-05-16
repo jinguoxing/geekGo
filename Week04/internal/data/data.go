@@ -3,8 +3,8 @@ package data
 import (
 	"context"
 
-	"github.com/go-kratos/kratos/examples/blog/internal/conf"
-	"github.com/go-kratos/kratos/examples/blog/internal/data/ent"
+	"github.com/jinguoxing/geekGo/Week04/internal/conf"
+	"github.com/jinguoxing/geekGo/Week04/internal/data/ent"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-redis/redis/extra/redisotel"
 	"github.com/go-redis/redis/v8"
