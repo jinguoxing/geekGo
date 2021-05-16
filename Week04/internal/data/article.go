@@ -2,7 +2,7 @@ package data
 
 import (
 	"context"
-	"github.com/jinguoxing/geekGo/Week04/internal/biz"
+	"geekGo/Week04/internal/biz"
 	"github.com/go-kratos/kratos/v2/log"
 	"time"
 )

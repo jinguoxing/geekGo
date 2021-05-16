@@ -7,7 +7,7 @@ import (
 
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/predicate"
+	"geekGo/Week04/internal/data/ent/predicate"
 )
 
 // ID filters vertices based on their ID field.

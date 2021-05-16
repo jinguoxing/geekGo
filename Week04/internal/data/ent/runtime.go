@@ -5,10 +5,10 @@ package ent
 import (
 	"time"
 
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/schema"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/tag"
+	"geekGo/Week04/internal/data/ent/article"
+	"geekGo/Week04/internal/data/ent/comment"
+	"geekGo/Week04/internal/data/ent/schema"
+	"geekGo/Week04/internal/data/ent/tag"
 )
 
 // The init function reads all schema descriptors with runtime code

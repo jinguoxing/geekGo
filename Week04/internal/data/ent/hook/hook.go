@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent"
+	"geekGo/Week04/internal/data/ent"
 )
 
 // The ArticleFunc type is an adapter to allow the use of ordinary

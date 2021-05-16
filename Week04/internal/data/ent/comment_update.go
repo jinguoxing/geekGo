@@ -10,9 +10,9 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/predicate"
+	"geekGo/Week04/internal/data/ent/article"
+	"geekGo/Week04/internal/data/ent/comment"
+	"geekGo/Week04/internal/data/ent/predicate"
 )
 
 // CommentUpdate is the builder for updating Comment entities.

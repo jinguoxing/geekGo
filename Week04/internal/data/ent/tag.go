@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"entgo.io/ent/dialect/sql"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/tag"
+	"geekGo/Week04/internal/data/ent/tag"
 )
 
 // Tag is the model entity for the Tag schema.

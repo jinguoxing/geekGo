@@ -10,8 +10,8 @@ import (
 
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
+	"geekGo/Week04/internal/data/ent/article"
+	"geekGo/Week04/internal/data/ent/comment"
 )
 
 // CommentCreate is the builder for creating a Comment entity.

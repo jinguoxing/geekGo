@@ -5,9 +5,9 @@ package enttest
 import (
 	"context"
 
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent"
+	"geekGo/Week04/internal/data/ent"
 	// required by schema hooks.
-	_ "github.com/jinguoxing/geekGo/Week04/internal/data/ent/runtime"
+	_ "geekGo/Week04/internal/data/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
 )

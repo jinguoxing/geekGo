@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"entgo.io/ent/dialect/sql"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/article"
-	"github.com/jinguoxing/geekGo/Week04/internal/data/ent/comment"
+	"geekGo/Week04/internal/data/ent/article"
+	"geekGo/Week04/internal/data/ent/comment"
 )
 
 // Comment is the model entity for the Comment schema.

@@ -6,11 +6,11 @@
 package main
 
 import (
-	"github.com/jinguoxing/geekGo/Week04/internal/biz"
-	"github.com/jinguoxing/geekGo/Week04/internal/conf"
-	"github.com/jinguoxing/geekGo/Week04/internal/data"
-	"github.com/jinguoxing/geekGo/Week04/internal/server"
-	"github.com/jinguoxing/geekGo/Week04/internal/service"
+	"geekGo/Week04/internal/biz"
+	"geekGo/Week04/internal/conf"
+	"geekGo/Week04/internal/data"
+	"geekGo/Week04/internal/server"
+	"geekGo/Week04/internal/service"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
 	"go.opentelemetry.io/otel/trace"

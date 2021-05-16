@@ -1,9 +1,9 @@
 package server
 
 import (
-	v1 "github.com/jinguoxing/geekGo/Week04/api/blog/v1"
-	"github.com/jinguoxing/geekGo/Week04/internal/conf"
-	"github.com/jinguoxing/geekGo/Week04/internal/service"
+	v1 "geekGo/Week04/api/blog/v1"
+	"geekGo/Week04/internal/conf"
+	"geekGo/Week04/internal/service"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware"
 	"github.com/go-kratos/kratos/v2/middleware/logging"
