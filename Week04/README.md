@@ -5,5 +5,47 @@
 
 ### 目录结构
 
+```shell
+
+├── Makefile
+├── README.md
+├── api
+│   └── blog
+│       └── v1
+├── cmd
+│   └── blog
+│       ├── main.go
+│       ├── wire.go
+│       └── wire_gen.go
+├── configs
+│   └── config.yaml
+├── go.mod
+├── go.sum
+└── internal
+    ├── biz
+    │   ├── README.md
+    │   ├── article.go
+    │   └── biz.go
+    ├── conf
+    │   ├── conf.pb.go
+    │   └── conf.proto
+    ├── data
+    │   ├── README.md
+    │   ├── article.go
+    │   ├── data.go
+    │   ├── ent
+    │   └── redis.go
+    ├── server
+    │   ├── grpc.go
+    │   ├── http.go
+    │   └── server.go
+    └── service
+        ├── README.md
+        ├── article.go
+        └── service.go
+        
+```
+
+
 
 
