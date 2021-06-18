@@ -4,7 +4,11 @@
 
 ### 系统配置 2核 8G
 
+### 测试的场景，十万次，并发50 
+
+
 #### 结论
+ 
  
 
 
@@ -150,6 +154,53 @@ SET: -nan
 100.00% <= 1 milliseconds
 90497.73 requests per second
 ```
+
+```
+[root@test-redis]# redis-benchmark -h nosql.redis.01.ickey.cn -a ickeyredis20150301 -p 6379 -t set,get -d 2000
+====== SET ======
+  100000 requests completed in 1.01 seconds
+  50 parallel clients
+  2000 bytes payload
+  keep alive: 1
+
+99.93% <= 1 milliseconds
+100.00% <= 1 milliseconds
+99206.34 requests per second
+
+====== GET ======
+  100000 requests completed in 1.10 seconds
+  50 parallel clients
+  2000 bytes payload
+  keep alive: 1
+
+99.89% <= 1 milliseconds
+100.00% <= 1 milliseconds
+90579.71 requests per second
+```
+```
+[root@test-redis]# redis-benchmark -h nosql.redis.01.ickey.cn -a ickeyredis20150301 -p 6379 -t set,get -d 4000
+====== SET ======
+  100000 requests completed in 1.08 seconds
+  50 parallel clients
+  4000 bytes payload
+  keep alive: 1
+
+99.95% <= 1 milliseconds
+100.00% <= 1 milliseconds
+92592.59 requests per second
+
+====== GET ======
+  100000 requests completed in 1.17 seconds
+  50 parallel clients
+  4000 bytes payload
+  keep alive: 1
+
+99.88% <= 1 milliseconds
+100.00% <= 1 milliseconds
+85397.09 requests per second
+
+```
+
 ```
 [root@test-redis]# redis-benchmark -h nosql.redis.01.ickey.cn -a ickeyredis20150301 -p 6379 -t set,get -d 5000
 ====== SET ======
