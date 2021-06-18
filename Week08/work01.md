@@ -94,6 +94,7 @@ Examples:
 
 ### 具体测试数据
 
+```
 [root@test-redis]# redis-benchmark -h nosql.redis.01.ickey.cn -a ickeyredis20150301 -p 6379 -t set,get -d 10
 ====== SET ======
   100000 requests completed in 1.07 seconds
