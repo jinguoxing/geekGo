@@ -10,6 +10,7 @@ func main(){
 
     ctx ,cancel := context.WithCancel(context.Background())
 
+    fmt.Println(time.Now())
     go func() {
 
         defer func() {
@@ -24,14 +25,17 @@ func main(){
                 return
             default:
                 time.Sleep(time.Second)
+                fmt.Println("default")
+                fmt.Println(time.Now())
             }
         }
 
     }()
-
+    fmt.Println(time.Now())
     time.Sleep(time.Second)
     cancel()
     time.Sleep(2 * time.Second)
+    fmt.Println(time.Now())
 
 
 
