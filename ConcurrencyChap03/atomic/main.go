@@ -2,8 +2,4 @@ package main
 
 
 
-func main(){
 
-
-
-}
