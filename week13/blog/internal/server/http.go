@@ -11,6 +11,7 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/validate"
 	"github.com/go-kratos/kratos/v2/transport/http"
 	"go.opentelemetry.io/otel/trace"
+	"github.com/go-kratos/swagger-api/openapiv2"
 )
 
 // NewHTTPServer new a HTTP server.
@@ -34,5 +35,9 @@ func NewHTTPServer(c *conf.Server, logger log.Logger, tracer trace.TracerProvide
 	}
 	srv := http.NewServer(opts...)
 	v1.RegisterBlogServiceHTTPServer(srv, blog)
+
+	h := openapiv2.NewHandler()
+	srv.HandlePrefix("/q/", h)
+
 	return srv
 }
