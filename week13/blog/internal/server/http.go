@@ -10,8 +10,9 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/tracing"
 	"github.com/go-kratos/kratos/v2/middleware/validate"
 	"github.com/go-kratos/kratos/v2/transport/http"
-	"go.opentelemetry.io/otel/trace"
 	"github.com/go-kratos/swagger-api/openapiv2"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"go.opentelemetry.io/otel/trace"
 )
 
 // NewHTTPServer new a HTTP server.
@@ -38,6 +39,10 @@ func NewHTTPServer(c *conf.Server, logger log.Logger, tracer trace.TracerProvide
 
 	h := openapiv2.NewHandler()
 	srv.HandlePrefix("/q/", h)
+
+	promHandle := promhttp.Handler()
+
+	srv.HandlePrefix("/metrics/",promHandle )
 
 	return srv
 }
