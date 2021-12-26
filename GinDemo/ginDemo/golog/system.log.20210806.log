@@ -1,0 +1,8 @@
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"GET","req_uri":"/v1//product/add","status_code":404,"time":"2021-08-06 15:58:49"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"GET","req_uri":"/favicon.ico","status_code":404,"time":"2021-08-06 15:58:49"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"GET","req_uri":"/v1/product/add","status_code":200,"time":"2021-08-06 15:58:52"}
+{"client_ip":"127.0.0.1","latency_time":998700,"level":"info","msg":"","req_method":"GET","req_uri":"/v1/member/add","status_code":403,"time":"2021-08-06 16:04:55"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"POST","req_uri":"/v1/member/add","status_code":200,"time":"2021-08-06 16:05:49"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"POST","req_uri":"/v1/member/add","status_code":403,"time":"2021-08-06 16:12:57"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"POST","req_uri":"/v1/member/add","status_code":403,"time":"2021-08-06 16:15:16"}
+{"client_ip":"127.0.0.1","latency_time":0,"level":"info","msg":"","req_method":"POST","req_uri":"/v1/member/add","status_code":200,"time":"2021-08-06 16:15:21"}

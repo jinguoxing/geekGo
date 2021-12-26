@@ -15,7 +15,7 @@ func main()  {
 
 	ctx, canceFunc := context.WithCancel(context.Background())
 
-	//ctx,canceFunc := context.WithTimeout(context.Background(),1*time.Second)
+//	ctx,canceFunc := context.WithTimeout(context.Background(),1*time.Second)
 	//ctx,canceFunc := context.WithDeadline(context.Background(),time.Now().Add(2*time.Second))
 
 	fmt.Println(time.Now())
@@ -28,16 +28,24 @@ func main()  {
 			}
 		})
 	}
-	<-ctx.Done()
+
+	for {
+		select {
+		case <-ctx.Done():
+			fmt.Println(ctx.Err())
+			return
+		default :
+			time.Sleep(10*time.Second)
+			fmt.Println("default")
+		}
+	}
 	fmt.Println("END.",time.Now())
 }
 
 func addNum(nump *int32,id int,deferFunc func()){
 
 		defer deferFunc()
-
 		for i:=0;;i++{
-
 			currNum := atomic.LoadInt32(nump)
 			newNum := currNum+1
 			time.Sleep(time.Millisecond*200)
@@ -47,6 +55,4 @@ func addNum(nump *int32,id int,deferFunc func()){
 				break
 			}
 		}
-
-
 }
