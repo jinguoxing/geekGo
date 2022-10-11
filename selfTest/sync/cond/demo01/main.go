@@ -7,17 +7,17 @@ import (
     "time"
 )
 
-func main(){
+func main() {
 
     c := sync.NewCond(&sync.Mutex{})
 
     var ready int
 
-    for i:=0; i<=10 ;i++ {
+    for i := 0; i <= 10; i++ {
 
         go func(i int) {
 
-            time.Sleep(time.Duration(rand.Int63n(10))* time.Second)
+            time.Sleep(time.Duration(rand.Int63n(10)) * time.Second)
 
             c.L.Lock()
             ready++
@@ -30,7 +30,6 @@ func main(){
         }(i)
 
     }
-
 
     c.L.Lock()
 

@@ -6,10 +6,10 @@ import (
 	"time"
 )
 
-func rpc()(string,error){
+func rpc() (string, error) {
 
-	time.Sleep(100 *time.Millisecond)
-	return "rpc done",nil
+	time.Sleep(100 * time.Millisecond)
+	return "rpc done", nil
 }
 
 type result struct {

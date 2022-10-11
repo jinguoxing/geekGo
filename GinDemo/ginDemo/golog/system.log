@@ -1,0 +1,8 @@
+time="2021-08-06T15:58:49+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=GET req_uri=/v1//product/add status_code=404
+time="2021-08-06T15:58:49+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=GET req_uri=/favicon.ico status_code=404
+time="2021-08-06T15:58:52+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=GET req_uri=/v1/product/add status_code=200
+time="2021-08-06T16:04:55+08:00" level=info client_ip=127.0.0.1 latency_time="998.7µs" req_method=GET req_uri=/v1/member/add status_code=403
+time="2021-08-06T16:05:49+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=POST req_uri=/v1/member/add status_code=200
+time="2021-08-06T16:12:57+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=POST req_uri=/v1/member/add status_code=403
+time="2021-08-06T16:15:16+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=POST req_uri=/v1/member/add status_code=403
+time="2021-08-06T16:15:21+08:00" level=info client_ip=127.0.0.1 latency_time=0s req_method=POST req_uri=/v1/member/add status_code=200
